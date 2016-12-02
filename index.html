@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <title ng-bind="($title || 'Home') + ' - ngWP'">ngWP</title>
+  <link rel="stylesheet" type="text/css" href="/dist/vendor.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="http://www.graydientcreative.com/Img/graydient-logo.png">
+        </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a ui-sref="home">Home</a></li>
+      <li><a ui-sref="posts">Posts</a></li>
+    </ul>
+    <search-form></search-form>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="ui-view-container"> 
+    <div ui-view> </div>
+  </div>
+</div>
+
+
+  <script src="/dist/vendor.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
+
+
+
